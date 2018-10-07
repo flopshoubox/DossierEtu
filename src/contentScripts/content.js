@@ -97,7 +97,8 @@ while (semestersTreeWalker.nextNode()) {
 
   //On s'occupe maintenant de la partie obeservation du semestre
   termTw.nextNode();
-  if (termTw.currentNode.childNodes.length > 0) {
+  console.log(termTw.currentNode);
+  if (termTw.currentNode.childNodes[1].textContent !== '') {
     //Si il y a un commentaire
     const decision = termTw.currentNode.childNodes[1].textContent;
     const comment = termTw.currentNode.childNodes[5].textContent;
